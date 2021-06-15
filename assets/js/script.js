@@ -37,12 +37,12 @@ function characterCatagories() {
 
     //they answer no to every character set
     if (!wantUppers && !wantLowers && !wantSymbols && !wantNumbers) { 
-        alert('hey dumb dumb we need characters to chose from. how do we make a password with no charactrs?');
+        alert('Hey dumb dumb, we need characters to chose from. How do we make a password with no charactrs?');
         characterCatagories();
     } else {
         //they answered yes to at least one thing
         if (wantUppers) {
-            // concatenating the string'd version of the uppercase array set -- join('') takes the array set and turns it into 1 string
+            // concatenating the string'd version of the array set -BELOW COULD ALSO BE DESCRIBED AS- join('') takes the array'd [values] and turns it into 1 string, as apposed to how its currently seperated into individual strings for each letter/number/symbol. !!!You could avoid using this if you set up your arrays more effienctly the first time, dummmy...
             availableCharacters += charCatagories.upCase.join('')
         }
         if (wantLowers) {
