@@ -106,10 +106,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-// // picking one random value from randomChar (FOR LOOP IN generatePassword())
-// var randomCharacter = function (randomChar) { 
-//     var keys = Object.keys(randomChar);
-//     return randomChar[keys[keys.length * Math.random() << 0]];
-// }
-// randomCharacter();
