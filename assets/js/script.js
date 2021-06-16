@@ -58,7 +58,7 @@ function chooseCharacterTypes() {
         if (wantSymbols) { 
             availableCharacters += charCatagories.symbol.join('')
         }
-        // displays in the console which characters will be accepted, using boolean values, in the order they were asked
+        // displays which characters will be accepted, with boolean values, in the cocsole in the order they were asked
         console.log(wantUppers, wantLowers, wantNumbers, wantSymbols);
         // assigns chooseCharacterTypes ALL CHARACTERS from ALL CHOSEN TYPES to availableCharacters
         return availableCharacters;
@@ -86,9 +86,9 @@ function generatePassword() {
         password += chosenCharacters[(Math.floor(Math.random() * chosenCharacters.length))]
 
 
-        // console.log(password);
-        return password;
+        console.log(password);
     }
+    return password;
 }
 
 
