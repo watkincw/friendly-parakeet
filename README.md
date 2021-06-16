@@ -1,3 +1,3 @@
 # Password Generator
 
-![screenshot of deployed application](./assets/images/Screenshot_1)
+![screenshot of deployed application](./assets/images/Screenshot_1.jpg)
