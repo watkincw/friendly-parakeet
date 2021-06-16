@@ -22,7 +22,7 @@ function passLength () {
     // prompt returns a string, we need it to be a number so we parseInt
     let answer =  parseInt(prompt("How long do you want your password to me? min: 8 max: 128"))
     // we just make sure its a good number -- this is the bad case
-    if (answer < 8 || answer > 128 ) {
+    if (!answer || answer < 8 || answer > 128 ) {
         alert("Hey dumb dumb, it's gotta be a number and between 8 and 128")
         passLength();
     } else {
@@ -75,17 +75,9 @@ function generatePassword() {
 
     // use the above data to create a password with a for loop
     // manipulate to create actual password
-
     for (var i = 0; i < desiredLength; i++) { 
-////////// What I am trying to do is take ONE value from ONE of the keys in randomChar, randomly, and return that as the first character. Then loop until i = desiredLength //////////
-////////// ALL possible character types are chosen already in chooseCharacterTypes() and assigned to the chosenCharacters var defined above in generatePassword() //////////
-////////// SOOOOOOOOOOOOOOOO //////////
-////////// I have to get a random value from the chosenCharacters var and add it to i in this for loop //////////
-
         // select one random value from chosenCharacters and add it to password
         password += chosenCharacters[(Math.floor(Math.random() * chosenCharacters.length))]
-
-
         console.log(password);
     }
     return password;
